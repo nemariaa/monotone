@@ -80,11 +80,47 @@
   border-bottom-left-radius: 1em 0.5em;
 }
 
+.time {
+  min-width: 295px;
+  color: #7B7C80;
+  font-size: .75em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  margin-left: -.5em;
+  margin-right: -.5em;
+  margin-bottom: -.5em;
+  text-align: center;
+  display: table;
+  }
+
+/*== Styles for messages with no header ==*/
+
+/* Remove margin: auto; like we talked about earlier */
+.phone-no-header {
+  max-width: 300px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: table;
+}
+
+/*Add width:300px; because the text messages don't have a header to spread the screen out wide, if that makes sense. */
+.messagebody-no-header {
+  width: 300px;
+  background-color: #FFFFFF;
+  display: table;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
 /* Example of how to use:
 
 <div class="phone">
   <p class="messagebody">
-    <span class="header">contact</span><br><br>
+    <span class="header">Mom</span><br /><br />
+    <span class="time"><b>Yesterday</b> 10:15 PM</span><br />
+    <span class="text">Can you call me as soon as you get this message?</span><br />
+    <span class="time"><b>Today</b> 9:05 AM</span><br />
+    <span class="text">Hello?</span><br />
+    <span class="text">Are you going to answer me?</span><br />
     <span class="breply">iOS reply</span><br><br>
     <span class="text">Other person's reply</span><br><br>
     <span class="greply">SMS reply</span><br><br>
