@@ -118,11 +118,11 @@
 
 /*== Styles for messages with no header ==*/
 
-/* Remove margin: auto; like we talked about earlier */
 .phone-no-header {
   max-width: 300px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: table;
+  margin: auto;
 }
 
 /*Add width:300px; because the text messages don't have a header to spread the screen out wide, if that makes sense. */
