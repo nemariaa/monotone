@@ -57,6 +57,29 @@
   border-bottom-right-radius: 1em 0.5em;
 }
 
+.breply {
+  float: right;
+  color: #FFFFFF;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #1289fe;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.breply::after {
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-left: 0.5em solid #1289fe;
+  border-bottom-left-radius: 1em 0.5em;
+}
+
 .greply {
   float: right;
   color: #FFFFFF;
