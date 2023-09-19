@@ -299,6 +299,14 @@
   margin-top: -.8em;
 }
 
+.timestamp-android {
+  margin-top: auto;
+  padding-left: .3em;
+  padding-right: .3em;
+  font-size: x-small;
+  opacity: 0.5;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -315,6 +323,7 @@
   <ol class="messageBody-android">
 
     <li class="replyWrapper-android">
+      <span class="timestamp-android">8:15 pm</span>
       <span class="reply-android">
         <p>Outgoing message</p>
       </span>
@@ -372,6 +381,7 @@
       <span class="text-android ">
         <p>Incoming message</p>
       </span>
+      <span class="timestamp-android">8:15 pm</span>
     </li>
   </ol>
 </div>
