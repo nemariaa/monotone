@@ -188,8 +188,8 @@
   font-size: .7em;
   padding-bottom: .5em;
   margin-top: -.75em;
-  text-align: center;
-  display: table;
+  display: flex;
+  justify-content: center;
   }
 
 .messageBody-android {
@@ -197,6 +197,11 @@
   background-color: #efedeb;
   margin: -4em 0 0 0;
   padding: 3em 0 .5em 0;
+}
+
+.no-header-android {
+  margin: 0;
+  padding: 0.5em 0 .5em 0;
 }
 
 .messageBody-android li {
@@ -227,9 +232,9 @@
 }
 
 .reply-android {
-  max-width: 60%;
+  max-width: 55%;
   background: #fefefe;
-  color: #000;
+  color: #333;
   padding: .7em .9em;
   border-radius: 1.5em;
 }
@@ -267,7 +272,7 @@
 }
 
 .text-android {
-  max-width: 60%;
+  max-width: 55%;
   background: var(--android-text-color-1);
   color: #fff;
   padding: .7em .9em;
