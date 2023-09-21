@@ -1,6 +1,7 @@
 /*========= Main Formatting =========*/
 :root {
-  --android-text-color-1: #c8b654;
+  --guangyao: #c8b654;
+  --xichen: #3cb4e3;
 }
 
 
@@ -158,6 +159,16 @@
 
 /*===== Android Text Message Formatting =====*/
 
+/* Colors - apply this class to header, icon, and texts */
+
+.guangyao {
+  background-color: var(--guangyao);
+}
+
+.xichen {
+  background-color: var(--xichen);
+}
+
 /* Container Styles */
 
 .phone-android {
@@ -167,7 +178,7 @@
 }
 
 .header-android {
-  background-color: var(--android-text-color-1);
+  /*background-color: var(--android-text-color-1);*/
   color: #fff;
   width: 300px;
   font-size: large;
@@ -216,7 +227,7 @@
   line-height: 40px;
   border-radius: 50%;
   position: relative;
-  background-color: var(--android-text-color-1);
+  /*background-color: var(--android-text-color-1);*/
   text-align: center;
   color: #fff;
   font-size: x-large;
@@ -273,7 +284,7 @@
 
 .text-android {
   max-width: 55%;
-  background: var(--android-text-color-1);
+  /*background: var(--android-text-color-1);*/
   color: #fff;
   padding: .7em .9em;
   border-radius: 1.5em;
