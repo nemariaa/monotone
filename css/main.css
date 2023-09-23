@@ -159,16 +159,6 @@
 
 /*===== Android Text Message Formatting =====*/
 
-/* Colors - apply this class to header, icon, and texts */
-
-.guangyao {
-  background-color: var(--guangyao);
-}
-
-.xichen {
-  background-color: var(--xichen);
-}
-
 /* Container Styles */
 
 .phone-android {
@@ -178,7 +168,7 @@
 }
 
 .header-android {
-  /*background-color: var(--android-text-color-1);*/
+  background-color: gray;
   color: #fff;
   width: 300px;
   font-size: large;
@@ -227,7 +217,7 @@
   line-height: 40px;
   border-radius: 50%;
   position: relative;
-  /*background-color: var(--android-text-color-1);*/
+  background-color: gray;
   text-align: center;
   color: #fff;
   font-size: x-large;
@@ -284,7 +274,7 @@
 
 .text-android {
   max-width: 55%;
-  /*background: var(--android-text-color-1);*/
+  background-color: gray;
   color: #fff;
   padding: .7em .9em;
   border-radius: 1.5em;
@@ -338,12 +328,22 @@
   visibility: hidden;
 }
 
+/* Colors - apply this class to header, icon, and texts */
+
+.guangyao {
+  background-color: var(--guangyao);
+}
+
+.xichen {
+  background-color: var(--xichen);
+}
+
 
 /*Example of how to use:
 
 <div class="phone-android">
 
-  <p class="header-android">Contact Name</p>
+  <p class="header-android">🡰&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContact Name</p>
 
   <span class="time-android"><b>Today</b> 8:35 AM</span><br />
 
