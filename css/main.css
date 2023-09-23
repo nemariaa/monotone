@@ -130,11 +130,11 @@
 
 /*Add width:300px; because the text messages don't have a header to spread the screen out wide, if that makes sense. */
 .messagebody-no-header {
-  width: 300px;
   background-color: #FFFFFF;
   display: table;
   padding-left: .5em;
   padding-right: .5em;
+  width: 284px;
 }
 
 /* Example of how to use:
