@@ -1,0 +1,257 @@
+/*===== Android Text Message Formatting =====*/
+
+/* Container Styles */
+
+.phone-android {
+  width: 300px;
+  font-family: "Roboto","Noto",Arial,sans-serif;
+  margin: 20px auto;
+}
+
+.header-android {
+  background-color: gray;
+  color: #fff;
+  width: 300px;
+  font-size: large;
+  padding: .5em 0 .5em .5em;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 30px;
+  display: table;
+  box-shadow: 0 0 10px #aaa;
+  clip-path: inset(0px -0px -10px 0px);
+}
+
+.time-android {
+  min-width: 295px;
+  color: #7B7C80;
+  font-size: .7em;
+  padding-bottom: .5em;
+  margin-top: -.75em;
+  display: flex;
+  justify-content: center;
+  }
+
+.messageBody-android {
+  list-style: none;
+  background-color: #efedeb;
+  margin: -4em 0 0 0;
+  padding: 3em 0 .5em 0;
+}
+
+.no-header-android {
+  margin: 0;
+  padding: 0.5em 0 .5em 0;
+}
+
+.messageBody-android li {
+  padding: 0 .5em;
+  overflow: hidden;
+  display: flex;
+}
+
+.icon-android {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  position: relative;
+  background-color: gray;
+  text-align: center;
+  color: #fff;
+  font-size: x-large;
+}
+
+/* Reply (Outgoing) Styles */
+
+.replyWrapper-android {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.reply-android {
+  max-width: 55%;
+  background: #fefefe;
+  color: #333;
+  padding: .7em .9em;
+  border-radius: 1.5em;
+}
+
+.firstReply-android {
+  border-radius: 1.5em 1.5em .2em 1.5em;
+}
+
+.middleReply-android {
+  border-radius: 1.5em .2em .2em 1.5em;
+}
+
+.lastReply-android {
+  border-radius: 1.5em .2em 1.5em 1.5em;
+}
+
+.reply-android p {
+  margin: auto;
+}
+
+/* Text (Incoming) Styles */
+
+.textWrapper-android {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.textIconWrapper-android {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50px;
+}
+
+.text-android {
+  max-width: 55%;
+  background-color: gray;
+  color: #fff;
+  padding: .7em .9em;
+  border-radius: 1.5em;
+}
+
+.firstText-android {
+  border-radius: 1.5em 1.5em 1.5em .2em;
+}
+
+.middleText-android {
+  border-radius: .2em 1.5em 1.5em .2em;
+}
+
+.lastText-android {
+  border-radius: .2em 1.5em 1.5em 1.5em;
+}
+
+.text-android p {
+  margin: auto;
+}
+
+/* Special Modifications */
+
+.messageBody-android li.singleWrapper-android {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.messageBody-android li.firstWrapper-android {
+  padding-top: .5em;
+  padding-bottom: .2em;
+}
+
+.messageBody-android li.middleWrapper-android {
+  padding-bottom: .2em;
+}
+
+.messageBody-android li.lastWrapper-android {
+  padding-bottom: .5em;
+}
+
+.timestamp-android {
+  margin-top: auto;
+  padding-left: .3em;
+  padding-right: .3em;
+  font-size: x-small;
+  opacity: 0.5;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Colors - apply this class to header, icon, and texts */
+
+.guangyao {
+  background-color: var(--guangyao);
+}
+
+.xichen {
+  background-color: var(--xichen);
+}
+
+
+/*Example of how to use:
+
+<div class="phone-android">
+
+  <p class="header-android">🡰&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContact Name</p>
+
+  <span class="time-android"><b>Today</b> 8:35 AM</span><br />
+
+  <ol class="messageBody-android">
+
+    <li class="replyWrapper-android singleWrapper-android">
+      <span class="timestamp-android">8:15 pm</span>
+      <span class="reply-android">
+        <p>Outgoing message</p>
+      </span>
+    </li>
+
+    <li class="textWrapper-android firstWrapper-android">
+      <span class="textIconWrapper-android hidden">
+        <div class="icon-android">F</div>
+      </span>
+      <span class="text-android firstText-android">
+        <p>Incoming message</p>
+      </span>
+    </li>
+
+    <li class="textWrapper-android middleWrapper-android">
+      <span class="textIconWrapper-android hidden">
+        <div class="icon-android">F</div>
+      </span>
+      <span class="text-android middleText-android">
+        <p>This is another incoming message</p>
+      </span>
+    </li>
+
+    <li class="textWrapper-android lastWrapper-android">
+      <span class="textIconWrapper-android">
+        <div class="icon-android">C</div>
+      </span>
+      <span class="text-android lastText-android">
+        <p>last incoming one test some small words</p>
+      </span>
+    </li>
+
+    <li class="replyWrapper-android firstWrapper-android">
+      <span class="reply-android firstReply-android">
+        <p>Outgoing message</p>
+      </span>
+    </li>
+
+    <li class="replyWrapper-android middleWrapper-android">
+      <span class="reply-android middleReply-android">
+        <p>Another one</p>
+      </span>
+    </li>
+
+    <li class="replyWrapper-android lastWrapper-android">
+      <span class="reply-android lastReply-android">
+        <p>So many test messages what to even do</p>
+      </span>
+    </li>
+
+    <li class="textWrapper-android singleWrapper-android">
+      <span class="textIconWrapper-android">
+        <div class="icon-android">C</div>
+      </span>
+      <span class="text-android ">
+        <p>Incoming message</p>
+      </span>
+      <span class="timestamp-android">8:15 pm</span>
+    </li>
+  </ol>
+</div>
+
+*/
