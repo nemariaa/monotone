@@ -1,6 +1,6 @@
 /*===== Android Text Message Formatting =====*/
 
-/* Container Styles */
+/* -----Container Styles----- */
 
 .phone-android {
   width: 300px;
@@ -41,6 +41,7 @@
   padding: 3em 0 .5em 0;
 }
 
+/* Add this to messageBody ol for texts with no header */
 .no-header-android {
   margin: 0;
   padding: 0.5em 0 .5em 0;
@@ -64,7 +65,7 @@
   font-size: x-large;
 }
 
-/* Reply (Outgoing) Styles */
+/* -----Reply (Outgoing) Styles----- */
 
 .replyWrapper-android {
   display: flex;
@@ -97,7 +98,7 @@
   margin: auto;
 }
 
-/* Text (Incoming) Styles */
+/* -----Text (Incoming) Styles----- */
 
 .textWrapper-android {
   display: flex;
@@ -137,22 +138,26 @@
   margin: auto;
 }
 
-/* Special Modifications */
+/* -----Special Modifications----- */
 
+/*Use singleWrapper-android class for the li when there is only one text in a group*/
 .messageBody-android li.singleWrapper-android {
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
+/*Use firstWrapper-android class for the li of the first text of a group of two or more texts*/
 .messageBody-android li.firstWrapper-android {
   padding-top: .5em;
   padding-bottom: .2em;
 }
 
+/*Use middleWrapper-android class for the li of middle texts of a group of three or more*/
 .messageBody-android li.middleWrapper-android {
   padding-bottom: .2em;
 }
 
+/*Use lastWrapper-android class for the li of the last text of a group of two or more*/
 .messageBody-android li.lastWrapper-android {
   padding-bottom: .5em;
 }
@@ -169,7 +174,8 @@
   visibility: hidden;
 }
 
-/* Colors - apply this class to header, icon, and texts */
+
+/* -----Colors - apply one of these classes to header, icon, and texts----- */
 
 .guangyao {
   background-color: var(--guangyao);
@@ -180,7 +186,10 @@
 }
 
 
-/*Example of how to use:
+
+/*
+
+Example of how to use:
 
 <div class="phone-android">
 
