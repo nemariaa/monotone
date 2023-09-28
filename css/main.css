@@ -22,6 +22,11 @@ h1, h2, h3 {
   text-align: center;
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
 a {
   color: #ddd;
 }
@@ -41,6 +46,14 @@ nav ul {
 nav ul li {
   width: 30%;
   text-align: center;
+}
+
+.top-nav {
+  padding-bottom: 1.5em;
+}
+
+.bottom-nav {
+  padding-top: 1.5em;
 }
 
 ol {
@@ -72,3 +85,10 @@ ol {
   font-family: 'Noto Serif JP', serif;
 }
 */
+
+@media only screen and (max-width: 400px) {
+  nav ul li {
+    width: 100%;
+    padding: 0.5em 0; 
+  }
+}
