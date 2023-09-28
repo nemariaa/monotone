@@ -6,7 +6,7 @@
 }
 
 body {
-  padding: 2em;
+  padding: 2em 1.9em 2em 2em;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;
   font-size: .875em;
   line-height: 1.5;
@@ -15,6 +15,8 @@ body {
   border-color: #222;
   outline: #111;
   box-shadow: none;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
