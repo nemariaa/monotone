@@ -84,6 +84,13 @@ nav ul li {
   padding-bottom: 1em;
 }
 
+.fic-text img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 /*
 .kaomoji {
   font-family: 'Noto Serif JP', serif;
