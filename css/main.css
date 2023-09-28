@@ -6,11 +6,56 @@
 }
 
 body {
-  margin: 1em;
+  padding: 2em;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;
+  font-size: .875em;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul li {
+  width: 20%;
+  text-align: center;
+}
+
+nav ul li:first-of-type {
+  width: 100%;
+}
+
+ol {
+  list-style: none;
 }
 
 .center {
   text-align: center;
+}
+
+.fic-notes {
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fic-notes h2 {
+  font-size: 1.2em;
 }
 
 /*
