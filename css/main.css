@@ -38,6 +38,12 @@ a:visited{
   color: #888;
 }
 
+.center {
+  text-align: center;
+}
+
+/*========= Nav Formatting =========*/
+
 nav ul {
   list-style: none;
   display: flex;
@@ -63,12 +69,18 @@ nav ul li {
   list-style: none;
   text-align: center;
   padding-left: 0;
-  line-height: 2.2em;
+  line-height: 2.4em;
 }
 
-.center {
-  text-align: center;
+/*========= Home Page Formatting =========*/
+
+.summary, .translations, .table-of-contents, .notes, .links {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
+
+/*========= Chapter Pages Formatting =========*/
 
 .fic-notes {
   border-top: thin solid #666;
@@ -95,18 +107,14 @@ nav ul li {
   max-width: 500px;
 }
 
-.summary, .translations, .table-of-contents, .notes, .links {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-
 
 /*
 .kaomoji {
   font-family: 'Noto Serif JP', serif;
 }
 */
+
+/*========= Wider Screen Formatting =========*/
 
 @media only screen and (min-width: 700px) {
   .chapter-list{
@@ -121,8 +129,9 @@ nav ul li {
 
   .chapter-list ol {
     margin-top: 0;
+    line-height: 1.7;
   }
-  
+
   .chapter-list li{
     padding: 5px 10px;
   }
