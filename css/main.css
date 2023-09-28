@@ -6,7 +6,7 @@
 }
 
 body {
-  padding: 2em 1.9em 2em 2em;
+  padding: 2em;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;
   font-size: .875em;
   line-height: 1.5;
@@ -88,9 +88,3 @@ ol {
 }
 */
 
-@media only screen and (max-width: 400px) {
-  nav ul li {
-    width: 100%;
-    padding: 0.5em 0; 
-  }
-}
