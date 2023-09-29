@@ -107,7 +107,7 @@ nav ul li {
   max-width: 500px;
 }
 
-span {
+ul li span, p.header-android span {
   font-family: 'Noto Sans Symbols 2';
   text-decoration: none;
 }
