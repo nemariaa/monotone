@@ -107,6 +107,10 @@ nav ul li {
   max-width: 500px;
 }
 
+span {
+  font-family: 'Zapf Dingbats';
+}
+
 
 /*
 .kaomoji {
