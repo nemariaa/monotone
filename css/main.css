@@ -6,7 +6,7 @@
 }
 
 body {
-  padding: 2em;
+  padding: 1em;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;
   font-size: .875em;
   line-height: 1.5;
@@ -122,6 +122,10 @@ ul li span, p.header-android span {
 /*========= Wider Screen Formatting =========*/
 
 @media only screen and (min-width: 700px) {
+  body {
+    padding: 2em;
+  }
+
   .chapter-list{
     -webkit-column-count: 3;
        -moz-column-count: 3;
